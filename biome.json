@@ -1,0 +1,75 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.7.3/schema.json",
+  "organizeImports": {
+    "enabled": false
+  },
+  "files": {
+    "ignore": [
+      "./node_modules",
+      "node_modules",
+      "*.cjs",
+      "./.velite/*",
+      "./.next/*",
+      "./__registry__/*",
+      "./public/registry/index.json"
+    ]
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "correctness": {
+        "noUnusedVariables": "warn",
+        "useExhaustiveDependencies": "warn",
+        "noInvalidUseBeforeDeclaration": "warn",
+        "useJsxKeyInIterable": "warn",
+        "noInnerDeclarations": "warn"
+      },
+      "a11y": {
+        "useValidAnchor": "off",
+        "noSvgWithoutTitle": "off",
+        "useButtonType": "off",
+        "noNoninteractiveTabindex": "off",
+        "useMediaCaption": "warn",
+        "noRedundantAlt": "error",
+        "useKeyWithClickEvents": "warn",
+        "noAutofocus": "warn"
+      },
+      "suspicious": {
+        "noExplicitAny": "warn",
+        "noArrayIndexKey": "off",
+        "noAssignInExpressions": "off",
+        "noImplicitAnyLet": "off",
+        "noSuspiciousSemicolonInJsx": "warn",
+        "noGlobalIsNan": "warn"
+      },
+      "style": {
+        "noUselessElse": "warn",
+        "noNonNullAssertion": "warn",
+        "useSingleVarDeclarator": "warn",
+        "useConst": "warn",
+        "noParameterAssign": "warn",
+        "useNumberNamespace": "warn",
+        "noVar": "warn",
+        "noCommaOperator": "warn"
+      },
+      "security": {
+        "noDangerouslySetInnerHtml": "off"
+      },
+      "complexity": {
+        "noBannedTypes": "off",
+        "noForEach": "off",
+        "useLiteralKeys": "warn"
+      },
+      "performance": {
+        "noAccumulatingSpread": "off"
+      }
+    }
+  },
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space",
+    "lineWidth": 90,
+    "indentWidth": 2
+  }
+}
